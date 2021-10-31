@@ -4,7 +4,6 @@
   import Card from './Card.svelte'
   import Button from './Button.svelte'
   import RatingSelect from './RatingSelect.svelte'
-import FeedbackStats from './FeedbackStats.svelte';
 
   let text = ''
   let rating = 10
