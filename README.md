@@ -4,7 +4,8 @@
 
 [Design page](https://www.uidesigndaily.com/posts/figma-feedback-pop-up-day-1390)
 
-Intall new svelte-app
+Intall new svelte-app and start editing by IDE "VS Code"
+
 `npx degit sveltejs/template svelte-feedback-app && cd svelte-feedback-app && npm i && code .`
 
 Install svelte vs code plugin.
@@ -26,5 +27,11 @@ npm start
 # Build for production
 npm run build
 ```
+
+Install additional package
+```bash
+npm i uuid
+```
+
 
 ## [Step by steps projects](/step-by-steps-projects)
