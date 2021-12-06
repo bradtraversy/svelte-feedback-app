@@ -1,5 +1,16 @@
 # Svelte Feedback App
 
+[![Svelte Crash Course 2021 video](https://img.youtube.com/vi/3TVy6GdtNuQ/0.jpg)](https://youtu.be/3TVy6GdtNuQ "Svelte Crash Course 2021")
+
+[Design page](https://www.uidesigndaily.com/posts/figma-feedback-pop-up-day-1390)
+
+Intall new svelte-app and start editing by IDE "VS Code"
+
+`npx degit sveltejs/template svelte-feedback-app && cd svelte-feedback-app && npm i && code .`
+
+Install svelte vs code plugin.
+
+
 This is the project from the Svelte crash course on my channel
 
 ```bash
@@ -16,3 +27,11 @@ npm start
 # Build for production
 npm run build
 ```
+
+Install additional package
+```bash
+npm i uuid
+```
+
+
+## [Step by steps projects](/step-by-steps-projects)
