@@ -1,6 +1,6 @@
 # Svelte Feedback App
 
-[![Svelte Crash Course 2021 video](https://img.youtube.com/vi/043h4ugAj4c/0.jpg)](https://youtu.be/043h4ugAj4c "Svelte Crash Course 2021")
+[![Svelte Crash Course 2021 video](https://img.youtube.com/vi/3TVy6GdtNuQc/0.jpg)](https://youtu.be/3TVy6GdtNuQ "Svelte Crash Course 2021")
 
 [Design page](https://www.uidesigndaily.com/posts/figma-feedback-pop-up-day-1390)
 
