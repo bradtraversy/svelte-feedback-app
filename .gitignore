@@ -4,3 +4,6 @@
 .DS_Store
 
 .vscode/extensions.json
+.clj-kondo
+.idea
+.lsp
