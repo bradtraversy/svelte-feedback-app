@@ -1,11 +1,15 @@
 <script lang="ts">
-  import { writable } from "svelte/store";
+  import { scale } from "svelte/transition";
   import FeedbackItem from "./FeedbackItem.svelte";
-  import type { Store } from "./FeedbackStores";
+  import type { StoreEntry } from "./FeedbackStores";
+  import { FeedbackStore } from "./FeedbackStores";
 
-  export let feedback: Store;
+  let feedback = Array<StoreEntry>();
+  FeedbackStore.subscribe((data) => (feedback = data));
 </script>
 
-{#each $feedback as fb (fb.id)}
-  <FeedbackItem item={fb} on:delete-feedback />
+{#each feedback as fb (fb.id)}
+  <div in:scale out:scale={{ duration: 500 }}>
+    <FeedbackItem item={fb} on:delete-feedback />
+  </div>
 {/each}

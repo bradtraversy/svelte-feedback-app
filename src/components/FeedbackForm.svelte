@@ -3,10 +3,11 @@
   import Card from "./Card.svelte";
   import Button from "./Button.svelte";
   import { ButtonType } from "./types";
-  import type { Store } from "./FeedbackStores";
+  import { FeedbackStore, StoreEntry } from "./FeedbackStores";
   import RatingSelect from "./RatingSelect.svelte";
 
-  export let feedback: Store;
+  let feedback = Array<StoreEntry>();
+  FeedbackStore.subscribe((data) => (feedback = data));
 
   let text = "";
   let btnDisabled = true;
@@ -32,7 +33,7 @@
         text,
         rating,
       };
-      feedback.update((currentFeedback) => {
+      FeedbackStore.update((currentFeedback) => {
         return [newFeedback, ...currentFeedback];
       });
       text = "";

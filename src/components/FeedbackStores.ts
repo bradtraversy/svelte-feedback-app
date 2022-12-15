@@ -6,13 +6,7 @@ export type StoreEntry = {
   text: string;
 };
 
-export type Store = Writable<
-  {
-    id: number;
-    rating: number;
-    text: string;
-  }[]
->;
+export type Store = Writable<Array<StoreEntry>>;
 export const FeedbackStore: Store = writable([
   {
     id: 1,

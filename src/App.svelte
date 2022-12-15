@@ -12,8 +12,8 @@
 </script>
 
 <main class="container">
-  <FeedbackForm {feedback} />
-  <FeedbackList {feedback} on:delete-feedback={deleteFeedback} />
+  <FeedbackForm />
+  <FeedbackList on:delete-feedback={deleteFeedback} />
 </main>
 
 <style></style>
