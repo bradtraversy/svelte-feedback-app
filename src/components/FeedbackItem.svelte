@@ -5,7 +5,7 @@
 
   export let item: StoreEntry;
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ "delete-feedback": number }>();
   function handleDelete(id: number): void {
     dispatch("delete-feedback", id);
   }
@@ -14,7 +14,7 @@
 <Card>
   <h2 class="num-display">{item.rating}</h2>
   <p>{item.text}</p>
-  <p class="close" on:click={() => handleDelete(item.id)}>X</p>
+  <button class="close" on:click={() => handleDelete(item.id)}>X</button>
 </Card>
 
 <style>
@@ -38,6 +38,7 @@
     position: absolute;
     top: -10px;
     width: 30px;
+    height: 30px;
     right: -10px;
     cursor: pointer;
     background: white;
