@@ -1,8 +1,10 @@
-<script>
-  import {FeedbackStore} from '../stores'
+<script lang="ts">
+  import { FeedbackStore } from "./FeedbackStores";
 
-  $: count = $FeedbackStore.length
-  $: average = $FeedbackStore.reduce((a, {rating}) => a + rating, 0) / $FeedbackStore.length
+  $: count = $FeedbackStore.length;
+  $: average =
+    $FeedbackStore.reduce((a, { rating }) => a + rating, 0) /
+    $FeedbackStore.length;
 </script>
 
 <div class="feedback-stats">
